@@ -1,3 +1,5 @@
+package model;
+
 import java.util.*;
 
 public class main {
@@ -23,7 +25,7 @@ public class main {
                 case 1:
                     System.out.println("-------------欢迎进入读者系统！-------------");
                     ArrayList<Book> books = new ArrayList<>();
-                    Reader reader = new Reader("张思瑞", "1234567890", books);
+                    Reader reader = new Reader("张思瑞", "1234567890", null);
                     reader.system(bookList, sc);
                     break;
                 case 2:

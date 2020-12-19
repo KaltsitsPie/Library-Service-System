@@ -1,3 +1,4 @@
+package model;
 
 /**
  *  书类
@@ -7,10 +8,6 @@ public class Book {
     private String id;
     //书名
     private String name;
-    //归还期限，用yyyy年MM月dd日表示
-    private String date;
-    //是否处于被借出状态，true为借出
-    private boolean isLent;
     //是否被收藏
     private boolean isStar;
 
@@ -20,16 +17,7 @@ public class Book {
     public Book(String id, String name) {
         this.id = id;
         this.name = name;
-        this.isLent = true;
         this.isStar = false;
-    }
-
-    public boolean getIsLent() {
-        return isLent;
-    }
-
-    public void setIsLent(boolean isLent) {
-        this.isLent = isLent;
     }
 
     public boolean getRemark() {
@@ -56,28 +44,9 @@ public class Book {
         this.name = name;
     }
 
-    public String getDate() {
-
-        return date;
-    }
-
-    public void setDate(String date)
-    {
-        this.date = date;
-    }
-
     @Override
     public String toString() {
-        if (getIsLent()) {
-            return "书名：" + name + "\n" +
-                    "书号：" + id + "\n" +
-                    "状态：借出\n" +
-                    "归还期限：" + date;
-        }
-        else{
-            return "书名：" + name + "\n" +
-                    "书号：" + id + "\n" +
-                    "状态: 在馆";
-        }
+        return "书名：" + name + "\n" +
+                "书号：" + id;
     }
 }

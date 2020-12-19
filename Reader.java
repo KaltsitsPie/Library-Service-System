@@ -1,31 +1,33 @@
+package model;
+
 import java.util.*;
 
 /**
  *  读者类
  */
 public class Reader extends Person{
-    ArrayList<Book> bookList;
+    ArrayList<LentBook> bookList;
 
     public Reader(){
 
     }
 
-    public Reader(String name, String id, ArrayList<Book> bookList){
+    public Reader(String name, String id, ArrayList<LentBook> bookList){
         this.setName(name);
         this.setId(id);
         this.bookList = bookList;
     }
 
-    public void setBookList(ArrayList<Book> books) {
+    public void setBookList(ArrayList<LentBook> books) {
         this.bookList = books;
     }
 
-    public ArrayList<Book> getBookList() {
+    public ArrayList<LentBook> getBookList() {
         return bookList;
     }
 
     @Override
-    public void system(ArrayList<Book>bookList,Scanner sc) {
+    public void system(ArrayList<Book>bookList, Scanner sc) {
         while(true){
             System.out.println("1.查看个人信息 2.查询图书 3.借书 4.还书 5.返回");
             int op = sc.nextInt();

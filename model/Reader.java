@@ -98,13 +98,23 @@ public class Reader extends Person{
     }
 
     //按书名查询图书
-    public static void queryBooksByName(ArrayList<Book> bookList, Scanner sc, String bookName){
-
+    public static Book queryBooksByName(ArrayList<Book> bookList, Scanner sc, String bookName){
+        for (Book b: bookList) {
+            if (b.getName().equals(bookName)) {
+                return b;
+            }
+        }
+        return null;
     }
 
     //按书号查询图书
-    public static void queryBooksById(ArrayList<Book> bookList, Scanner sc, String id){
-
+    public static Book queryBooksById(ArrayList<Book> bookList, Scanner sc, String id){
+        for (Book b: bookList) {
+            if (b.getId().equals(id)) {
+                return b;
+            }
+        }
+        return null;
     }
 
     //借书

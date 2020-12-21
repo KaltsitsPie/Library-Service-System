@@ -78,14 +78,18 @@ public class Reader extends Person{
         int type = sc.nextInt();
         switch (type) {
             case 0:
+                sc.nextLine();
                 String bookName = sc.nextLine();
                 //按书名查询
-
+                Book b1 = queryBooksByName(bookList, sc, bookName);
+                System.out.println(b1);
                 break;
             case 1:
                 String bookId = sc.nextLine();
                 //按书号查询
-
+                sc.nextLine();
+                Book b2 = queryBooksByName(bookList, sc, bookId);
+                System.out.println(b2);
                 break;
             case 2:
                 System.out.println("退出查询！");
@@ -101,9 +105,11 @@ public class Reader extends Person{
     public static Book queryBooksByName(ArrayList<Book> bookList, Scanner sc, String bookName){
         for (Book b: bookList) {
             if (b.getName().equals(bookName)) {
+                System.out.println("查询成功");
                 return b;
             }
         }
+        System.out.println("查询失败");
         return null;
     }
 
@@ -111,9 +117,11 @@ public class Reader extends Person{
     public static Book queryBooksById(ArrayList<Book> bookList, Scanner sc, String id){
         for (Book b: bookList) {
             if (b.getId().equals(id)) {
+                System.out.println("查询成功");
                 return b;
             }
         }
+        System.out.println("查询失败");
         return null;
     }
 

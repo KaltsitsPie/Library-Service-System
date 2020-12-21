@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="LOGINPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: B0C4DE;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.LoginController">
+   <children>
+      <Label layoutX="110.0" layoutY="63.0" prefHeight="48.0" prefWidth="390.0" text="Welcome to Library Service System">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="#00000080" />
+         </effect>
+      </Label>
+      <Label layoutX="84.0" layoutY="149.0" text="Account">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="217.0" text="Password">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="261.0" layoutY="291.0" mnemonicParsing="false" onAction="#Login_click" prefHeight="40.0" prefWidth="79.0" text="Login">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+         <effect>
+            <Reflection fraction="0.5" />
+         </effect>
+      </Button>
+      <TextField layoutX="225.0" layoutY="151.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <TextField layoutX="225.0" layoutY="219.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+   </children>
+</AnchorPane>

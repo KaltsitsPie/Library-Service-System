@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: B0C4DE;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.SearchBookController">
+   <children>
+      <Text layoutX="157.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Book Information">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#825555" layoutX="119.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Searching by either Book name or Book ID is available">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="125.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="125.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book ID">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField layoutX="245.0" layoutY="115.0" promptText="Enter book name">
+         <effect>
+            <DropShadow />
+         </effect></TextField>
+      <TextField layoutX="245.0" layoutY="160.0" promptText="Enter book ID">
+         <effect>
+            <DropShadow />
+         </effect></TextField>
+      <TableView fx:id="Search_Table" layoutX="125.0" layoutY="225.0" prefHeight="146.0" prefWidth="362.0">
+        <columns>
+          <TableColumn fx:id="Search_Book_Name_col" prefWidth="113.20001220703125" text="Book Name" />
+          <TableColumn fx:id="Search_Book_ID_col" prefWidth="125.19998168945312" text="Book ID" />
+            <TableColumn fx:id="Search_Borrowed_col" prefWidth="124.4000244140625" text="Borrowed or not" />
+        </columns>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TableView>
+      <Button layoutX="432.0" layoutY="138.0" mnemonicParsing="false" onAction="#Search_click" text="Search">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

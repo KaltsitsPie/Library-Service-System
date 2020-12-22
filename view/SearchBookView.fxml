@@ -27,25 +27,30 @@
             <Font size="15.0" />
          </font>
       </Text>
-      <TextField layoutX="245.0" layoutY="115.0" promptText="Enter book name">
+      <TextField fx:id="Enter_name" layoutX="245.0" layoutY="115.0" promptText="Enter book name">
          <effect>
             <DropShadow />
          </effect></TextField>
-      <TextField layoutX="245.0" layoutY="160.0" promptText="Enter book ID">
+      <TextField fx:id="Enter_ID" layoutX="245.0" layoutY="160.0" promptText="Enter book ID">
          <effect>
             <DropShadow />
          </effect></TextField>
-      <TableView fx:id="Search_Table" layoutX="125.0" layoutY="225.0" prefHeight="146.0" prefWidth="362.0">
+      <TableView fx:id="Search_Table" layoutX="90.0" layoutY="225.0" prefHeight="146.0" prefWidth="442.0">
         <columns>
-          <TableColumn fx:id="Search_Book_Name_col" prefWidth="113.20001220703125" text="Book Name" />
-          <TableColumn fx:id="Search_Book_ID_col" prefWidth="125.19998168945312" text="Book ID" />
-            <TableColumn fx:id="Search_Borrowed_col" prefWidth="124.4000244140625" text="Borrowed or not" />
+          <TableColumn fx:id="Search_Book_Name_col" prefWidth="184.59998321533203" text="Book Name" />
+          <TableColumn fx:id="Search_Book_ID_col" prefWidth="126.79998779296875" text="Book ID" />
+            <TableColumn fx:id="Search_Borrowed_col" prefWidth="128.4000244140625" text="Borrowed or not" />
         </columns>
          <effect>
             <DropShadow />
          </effect>
       </TableView>
-      <Button layoutX="432.0" layoutY="138.0" mnemonicParsing="false" onAction="#Search_click" text="Search">
+      <Button fx:id="Search_buttom" layoutX="437.0" layoutY="115.0" mnemonicParsing="false" onAction="#Search_click" text="Search">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="Search_button_1" layoutX="437.0" layoutY="161.0" mnemonicParsing="false" onAction="#Search_click_1" text="Search">
          <effect>
             <DropShadow />
          </effect>

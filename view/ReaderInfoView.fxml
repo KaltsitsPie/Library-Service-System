@@ -7,54 +7,63 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: B0C4DE;"
-            xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="control.ReaderInfoController">
-   <Label layoutX="168.0" layoutY="42.0" text="Reader Information">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: B0C4DE;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.ReaderInfoController">
+   <Label layoutX="168.0" layoutY="29.0" text="Reader Information">
       <font>
-         <Font name="Arial Rounded MT Bold" size="28.0"/>
+         <Font name="Arial Rounded MT Bold" size="28.0" />
       </font>
    </Label>
-   <ImageView fitHeight="95.0" fitWidth="106.0" layoutX="477.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+   <ImageView fitHeight="95.0" fitWidth="106.0" layoutX="476.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
       <effect>
-         <DropShadow/>
+         <DropShadow>
+            <input>
+               <InnerShadow />
+            </input></DropShadow>
       </effect>
-      <Image url="@head.jpg"/>
+      <Image url="@head.jpg" />
    </ImageView>
-   <Label layoutX="199.0" layoutY="76.0" text="Please check your information" textFill="#9a9292">
+   <Label layoutX="165.0" layoutY="78.0" text="Please check your information" textFill="#9a9292">
       <font>
-         <Font size="14.0"/>
+         <Font size="14.0" />
       </font>
    </Label>
    <Label layoutX="124.0" layoutY="123.0" text="Name">
       <font>
-         <Font size="14.0"/>
+         <Font size="14.0" />
       </font>
    </Label>
    <Label layoutX="124.0" layoutY="182.0" text="Id">
       <font>
-         <Font size="14.0"/>
+         <Font size="14.0" />
       </font>
    </Label>
-   <TableView layoutX="124.0" layoutY="229.0" prefHeight="138.0" prefWidth="352.0">
+   <TableView fx:id="Table_Reader" layoutX="78.0" layoutY="229.0" prefHeight="138.0" prefWidth="441.0">
       <columns>
-         <TableColumn fx:id="Book_borrowed_col" prefWidth="115.39999389648438" text="Book borrowed"/>
-         <TableColumn fx:id="Book_ID_col" prefWidth="120.60000610351562" text="Book ID"/>
-         <TableColumn fx:id="Return_date_col" prefWidth="115.40005493164062" text="Return date"/>
+         <TableColumn fx:id="Book_borrowed_col" prefWidth="213.99999237060547" text="Book borrowed" />
+         <TableColumn fx:id="Book_ID_col" prefWidth="126.00003051757812" text="Book ID" />
+         <TableColumn fx:id="Return_date_col" prefWidth="96.60003662109375" text="Return date" />
       </columns>
       <effect>
-         <DropShadow/>
+         <DropShadow />
       </effect>
    </TableView>
-   <Text fx:id="Name_text" layoutX="269.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name1">
+   <Text fx:id="Name_text" layoutX="269.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="张思瑞">
       <font>
-         <Font size="18.0"/>
+         <Font size="18.0" />
       </font>
    </Text>
-   <Text fx:id="Id_text" layoutX="286.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id1">
+   <Text fx:id="Id_text" layoutX="205.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="351305200103053727">
       <font>
-         <Font size="18.0"/>
+         <Font size="18.0" />
       </font>
    </Text>
-   <Line endX="236.39999389648438" layoutX="232.0" layoutY="164.0" startX="-107.5999984741211"/>
+   <Line endX="236.39999389648438" layoutX="232.0" layoutY="164.0" startX="-107.5999984741211" />
+   <Button fx:id="Reader_Check_button" layoutX="393.0" layoutY="76.0" mnemonicParsing="false" onAction="#Check_click" text="Check">
+      <effect>
+         <DropShadow />
+      </effect>
+   </Button>
+   <effect>
+      <DropShadow />
+   </effect>
 </AnchorPane>

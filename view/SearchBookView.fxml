@@ -35,11 +35,11 @@
          <effect>
             <DropShadow />
          </effect></TextField>
-      <TableView fx:id="Search_Table" layoutX="81.0" layoutY="225.0" prefHeight="146.0" prefWidth="452.0">
+      <TableView fx:id="Search_Table" layoutX="90.0" layoutY="225.0" prefHeight="146.0" prefWidth="442.0">
         <columns>
           <TableColumn fx:id="Search_Book_Name_col" prefWidth="184.59998321533203" text="Book Name" />
-          <TableColumn fx:id="Search_Book_ID_col" prefWidth="136.20001220703125" text="Book ID" />
-            <TableColumn fx:id="Search_Borrowed_col" prefWidth="132.19998168945312" text="Borrowed or not" />
+          <TableColumn fx:id="Search_Book_ID_col" prefWidth="126.79998779296875" text="Book ID" />
+            <TableColumn fx:id="Search_Borrowed_col" prefWidth="128.4000244140625" text="Borrowed or not" />
         </columns>
          <effect>
             <DropShadow />

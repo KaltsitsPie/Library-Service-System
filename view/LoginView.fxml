@@ -15,12 +15,12 @@
             <DropShadow color="#00000080" />
          </effect>
       </Label>
-      <Label layoutX="84.0" layoutY="149.0" text="Account">
+      <Label layoutX="116.0" layoutY="149.0" text="Account">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="78.0" layoutY="217.0" text="Password">
+      <Label layoutX="110.0" layoutY="217.0" text="Password">
          <font>
             <Font size="20.0" />
          </font>
@@ -33,12 +33,12 @@
             <Reflection fraction="0.5" />
          </effect>
       </Button>
-      <TextField layoutX="225.0" layoutY="151.0">
+      <TextField layoutX="225.0" layoutY="151.0" prefHeight="23.0" prefWidth="206.0">
          <effect>
             <DropShadow />
          </effect>
       </TextField>
-      <TextField layoutX="225.0" layoutY="219.0">
+      <TextField layoutX="225.0" layoutY="219.0" prefHeight="23.0" prefWidth="206.0">
          <effect>
             <DropShadow />
          </effect>

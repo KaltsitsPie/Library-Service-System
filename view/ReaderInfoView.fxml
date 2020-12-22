@@ -37,11 +37,11 @@
          <Font size="14.0" />
       </font>
    </Label>
-   <TableView fx:id="Table_Reader" layoutX="78.0" layoutY="229.0" prefHeight="138.0" prefWidth="469.0">
+   <TableView fx:id="Table_Reader" layoutX="78.0" layoutY="229.0" prefHeight="138.0" prefWidth="441.0">
       <columns>
          <TableColumn fx:id="Book_borrowed_col" prefWidth="213.99999237060547" text="Book borrowed" />
          <TableColumn fx:id="Book_ID_col" prefWidth="126.00003051757812" text="Book ID" />
-         <TableColumn fx:id="Return_date_col" prefWidth="129.00003051757812" text="Return date" />
+         <TableColumn fx:id="Return_date_col" prefWidth="96.60003662109375" text="Return date" />
       </columns>
       <effect>
          <DropShadow />

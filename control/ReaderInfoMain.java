@@ -26,6 +26,7 @@ public class ReaderInfoMain extends Application {
 
             primaryStage.setScene(scene);
 
+
         } catch(Exception e) {
             e.printStackTrace();
         }
@@ -34,3 +35,4 @@ public class ReaderInfoMain extends Application {
         launch(args);
     }
 }
+

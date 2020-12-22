@@ -19,7 +19,11 @@ public class SearchBookController {
     public TableColumn<SearchTable, String> Search_Borrowed_col;
     public Button Search_buttom;
     public Button Search_button_1;
-    
+
+    final ObservableList<SearchTable> data0 = FXCollections.observableArrayList(
+
+    );
+
     final ObservableList<SearchTable> data = FXCollections.observableArrayList(
             new SearchTable("Java程序设计", "ID1234567", "已借出"),
             new SearchTable("Java程序设计经典方法", "ID2234787", "未借出"),
@@ -35,18 +39,30 @@ public class SearchBookController {
         Search_Book_Name_col.setCellValueFactory(searchTableStringCellDataFeatures -> searchTableStringCellDataFeatures.getValue().bookNameFound);
         Search_Book_ID_col.setCellValueFactory(searchTableStringCellDataFeatures -> searchTableStringCellDataFeatures.getValue().bookIDFound);
         Search_Borrowed_col.setCellValueFactory(searchTableStringCellDataFeatures -> searchTableStringCellDataFeatures.getValue().isBorrowed);
+
+        Search_Table.setItems(data0);
+        Search_Table.getColumns().addAll(Search_Book_Name_col, Search_Book_ID_col, Search_Borrowed_col);
     }
     
     public void Search_click(ActionEvent actionEvent) {
+        Enter_name.clear();
         Search_Table.getItems().clear();
+
+//        Search_Book_Name_col.setCellValueFactory(searchTableStringCellDataFeatures -> searchTableStringCellDataFeatures.getValue().bookNameFound);
+//        Search_Book_ID_col.setCellValueFactory(searchTableStringCellDataFeatures -> searchTableStringCellDataFeatures.getValue().bookIDFound);
+//        Search_Borrowed_col.setCellValueFactory(searchTableStringCellDataFeatures -> searchTableStringCellDataFeatures.getValue().isBorrowed);
+
         Search_Table.setItems(data);
-        Search_Table.getColumns().addAll(Search_Book_Name_col, Search_Book_ID_col, Search_Borrowed_col);
+//        Search_Table.getColumns().addAll(Search_Book_Name_col, Search_Book_ID_col, Search_Borrowed_col);
+
     }
 
     public void Search_click_1(ActionEvent actionEvent) {
+        Enter_ID.clear();
         Search_Table.getItems().clear();
         Search_Table.setItems(data1);
-        Search_Table.getColumns().addAll(Search_Book_Name_col, Search_Book_ID_col, Search_Borrowed_col);
+//        Search_Table.getColumns().addAll(Search_Book_Name_col, Search_Book_ID_col, Search_Borrowed_col);
+
     }
 
     static public class SearchTable {

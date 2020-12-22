@@ -45,7 +45,12 @@
             <DropShadow />
          </effect>
       </TableView>
-      <Button fx:id="Search_buttom" layoutX="432.0" layoutY="138.0" mnemonicParsing="false" onAction="#Search_click" text="Search">
+      <Button fx:id="Search_buttom" layoutX="437.0" layoutY="115.0" mnemonicParsing="false" onAction="#Search_click" text="Search">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="Search_button_1" layoutX="437.0" layoutY="161.0" mnemonicParsing="false" onAction="#Search_click_1" text="Search">
          <effect>
             <DropShadow />
          </effect>
